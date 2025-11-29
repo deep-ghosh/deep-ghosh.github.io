@@ -25,7 +25,6 @@ export const metadata: Metadata = {
   keywords: ['travel', 'cab', 'taxi', 'Kolkata', 'Newtown', 'school pickup', 'office shuttle', 'wedding car', 'tour', 'car rental', 'airport pickup'],
   authors: [{ name: 'Jesus Travel' }],
   metadataBase: new URL(SITE_CONFIG.url),
-  canonicalUrl: SITE_CONFIG.url,
   openGraph: {
     title: `${SITE_CONFIG.name} - ${SITE_CONFIG.tagline}`,
     description: SITE_CONFIG.description,
