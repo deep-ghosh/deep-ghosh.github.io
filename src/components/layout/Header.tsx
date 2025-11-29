@@ -18,7 +18,7 @@ const navItems = [
 
 const getGmailLink = () => {
   // Detect if user is on mobile
-  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  const isMobile = typeof window !== 'undefined' && typeof navigator !== 'undefined' && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   
   const to = SITE_CONFIG.email;
   const subject = "I want to book the car";

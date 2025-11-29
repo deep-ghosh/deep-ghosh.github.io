@@ -1,11 +1,13 @@
-import React from 'react';
+'use client';
+
+import React, { useMemo } from 'react';
 import Link from 'next/link';
 import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 import { SITE_CONFIG } from '@/config/site';
 
 const getGmailLink = () => {
   // Detect if user is on mobile
-  const isMobile = typeof window !== 'undefined' && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  const isMobile = typeof window !== 'undefined' && typeof navigator !== 'undefined' && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   
   const to = SITE_CONFIG.email;
   const subject = "I want to book the car";
