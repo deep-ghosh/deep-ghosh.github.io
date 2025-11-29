@@ -1,95 +1,59 @@
-# Jesus Travel - Vehicle Booking Platform
+# Jesus Travel - Vehicle Booking Service
 
-A production-ready Next.js application for Jesus Travel, a vehicle booking service based in Newtown, Kolkata.
+Professional vehicle booking platform for Jesus Travel, Kolkata.
 
-## Features
+## Quick Start
 
-- 🚗 Multi-step booking wizard
-- 📧 Email notifications via SendGrid
-- 📱 SMS notifications via Twilio
-- 🔐 Admin dashboard with authentication
-- 📍 Location autocomplete (Google Places / Nominatim)
-- 💾 Supabase database integration
-- 🎨 Tailwind CSS styling
-- ✅ Form validation with Zod
-- 🧪 Jest testing setup
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js >= 18.0.0
-- npm >= 9.0.0
-
-### Installation
-
-```bash
+\\\ash
 npm install
-```
-
-### Environment Setup
-
-Copy `.env.example` to `.env.local` and fill in your credentials:
-
-```bash
 cp .env.example .env.local
-```
-
-### Development
-
-```bash
 npm run dev
-```
+\\\
 
-Open [http://localhost:3000](http://localhost:3000) with your browser.
+Visit \http://localhost:3000\
 
-### Build
+## Environment Setup
 
-```bash
-npm run build
-npm start
-```
-
-### Testing
-
-```bash
-npm test
-npm run test:coverage
-```
-
-## Project Structure
-
-```
-jesustravel/
-├── src/
-│   ├── app/           # Next.js App Router pages
-│   ├── components/    # React components
-│   ├── lib/           # Utility functions
-│   ├── types/         # TypeScript types
-│   └── config/        # Configuration files
-├── __tests__/         # Test files
-├── public/            # Static assets
-└── supabase/          # Database migrations
-```
-
-## Services
-
-- **School Pickups** - Daily school transportation
-- **Office Shuttles** - Corporate commute solutions
-- **Weddings/Events** - Special occasion transport
-- **Tours** - City and outstation tours
+Add to \.env.local\:
+\\\
+SENDGRID_API_KEY=your_sendgrid_key
+\\\
 
 ## Tech Stack
 
-- **Framework**: Next.js 14
+- **Framework**: Next.js 14 (React + TypeScript)
 - **Styling**: Tailwind CSS
-- **Database**: Supabase
-- **Auth**: NextAuth.js
-- **Email**: SendGrid
-- **SMS**: Twilio
-- **Validation**: Zod
-- **Testing**: Jest + React Testing Library
+- **Email**: SendGrid API
+- **Deployment**: Vercel
 
-## License
+## Project Structure
 
-Private - All rights reserved.
+\\\
+src/
+ app/          # Pages & API routes
+ components/   # React components
+ config/       # Configuration
+ lib/          # Utilities
+ types/        # TypeScript types
+\\\
+
+## Build & Deploy
+
+\\\ash
+npm run build
+npm start
+\\\
+
+Ready for Vercel deployment with GitHub integration.
+
+## Features
+
+- Professional booking interface
+- Contact form with email notifications
+- Mobile-responsive design
+- WhatsApp & phone integration
+- Gmail integration with prefilled messages
+
+---
+
+Maintained for Jesus Travel Services.
