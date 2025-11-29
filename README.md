@@ -2,6 +2,8 @@
 
 Professional vehicle booking platform for Jesus Travel, Kolkata.
 
+🌐 **[Visit Live Website](http://jesustravel.me/)** | 📱 Mobile Optimized | ⚡ Production Ready
+
 ## Quick Start
 
 \\\ash
@@ -48,11 +50,12 @@ Ready for Vercel deployment with GitHub integration.
 
 ## Features
 
-- Professional booking interface
-- Contact form with email notifications
-- Mobile-responsive design
-- WhatsApp & phone integration
-- Gmail integration with prefilled messages
+- 🎯 Professional booking interface
+- 📧 Contact form with email notifications
+- 📱 Mobile-responsive design (Android/iOS optimized)
+- 💬 WhatsApp & phone integration
+- 📨 Gmail integration with smart device detection
+- ⚡ Production-ready with CI/CD pipeline
 
 ---
 

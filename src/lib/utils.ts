@@ -1,6 +1,5 @@
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
-import { format, parseISO } from 'date-fns';
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -8,7 +7,10 @@ export function cn(...inputs: ClassValue[]) {
 
 export function generateBookingRef(): string {
   const date = new Date();
-  const dateStr = format(date, 'yyyyMMdd');
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  const dateStr = `${year}${month}${day}`;
   const random = Math.floor(Math.random() * 10000).toString().padStart(4, '0');
   return `JT-${dateStr}-${random}`;
 }
@@ -46,8 +48,16 @@ export function formatCurrency(amount: number): string {
 
 export function formatDateTime(dateString: string): string {
   try {
-    const date = parseISO(dateString);
-    return format(date, 'dd MMM yyyy, hh:mm a');
+    const date = new Date(dateString);
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = months[date.getMonth()];
+    const year = date.getFullYear();
+    const hours = String(date.getHours()).padStart(2, '0');
+    const minutes = String(date.getMinutes()).padStart(2, '0');
+    const ampm = date.getHours() >= 12 ? 'PM' : 'AM';
+    const displayHour = date.getHours() % 12 || 12;
+    return `${day} ${month} ${year}, ${displayHour}:${minutes} ${ampm}`;
   } catch {
     return dateString;
   }
@@ -55,8 +65,12 @@ export function formatDateTime(dateString: string): string {
 
 export function formatDate(dateString: string): string {
   try {
-    const date = parseISO(dateString);
-    return format(date, 'dd MMM yyyy');
+    const date = new Date(dateString);
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = months[date.getMonth()];
+    const year = date.getFullYear();
+    return `${day} ${month} ${year}`;
   } catch {
     return dateString;
   }
