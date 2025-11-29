@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import { MessageCircle, Phone, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { createQuickWhatsAppLink, createCallLink } from '@/lib/whatsapp';
 import { SITE_CONFIG } from '@/config/site';
 
 interface FloatingActionsProps {
@@ -65,7 +64,7 @@ export function FloatingActions({
         >
           {/* Call Button */}
           <a
-            href={createCallLink()}
+            href={`tel:${SITE_CONFIG.phone}`}
             className={cn(
               'flex items-center gap-3 px-4 py-3 rounded-full',
               'bg-blue-600 text-white shadow-lg shadow-blue-500/30',
@@ -83,7 +82,7 @@ export function FloatingActions({
 
           {/* WhatsApp Button */}
           <a
-            href={createQuickWhatsAppLink()}
+            href={`https://wa.me/${SITE_CONFIG.whatsapp}`}
             target="_blank"
             rel="noopener noreferrer"
             className={cn(
@@ -134,7 +133,7 @@ export function FloatingActions({
 export function WhatsAppFAB() {
   return (
     <a
-      href={createQuickWhatsAppLink()}
+      href={`https://wa.me/${SITE_CONFIG.whatsapp}`}
       target="_blank"
       rel="noopener noreferrer"
       className={cn(

@@ -11,4 +11,4 @@ export interface Vehicle {
   image?: string;
 }
 
-export type VehicleType = 'sedan' | 'suv' | 'tempo' | 'bus';
+import { VehicleType } from './booking';
