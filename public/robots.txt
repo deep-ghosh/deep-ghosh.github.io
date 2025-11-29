@@ -1,0 +1,10 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow admin and private paths (if any)
+Disallow: /.next/
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://jesustravel.me/sitemap.xml
