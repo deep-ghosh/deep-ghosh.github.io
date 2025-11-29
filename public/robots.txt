@@ -2,7 +2,7 @@
 User-agent: *
 Allow: /
 
-# Disallow admin and private paths (if any)
+# Disallow admin and private paths
 Disallow: /.next/
 Disallow: /api/
 

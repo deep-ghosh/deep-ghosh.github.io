@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+  http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage (highest priority) -->
+  <url>
+    <loc>https://jesustravel.me/</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://jesustravel.me/about</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://jesustravel.me/services</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Book/Contact Page -->
+  <url>
+    <loc>https://jesustravel.me/book</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://jesustravel.me/contact</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- FAQ Page -->
+  <url>
+    <loc>https://jesustravel.me/faq</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://jesustravel.me/privacy</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <!-- Terms of Service -->
+  <url>
+    <loc>https://jesustravel.me/terms</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+</urlset>
