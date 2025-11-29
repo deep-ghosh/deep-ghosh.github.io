@@ -1,0 +1,44 @@
+<svg viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f4d03f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4af37;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Outer Border/Banner Background -->
+  <path d="M 40 50 Q 60 30 80 35 L 820 35 Q 840 30 860 50 L 870 120 Q 860 160 840 165 L 60 165 Q 40 160 30 120 Z" 
+        fill="url(#goldGrad)" stroke="#0f2847" stroke-width="6" filter="url(#shadow)"/>
+  
+  <!-- Inner decorative border -->
+  <path d="M 50 55 Q 65 40 80 45 L 820 45 Q 835 40 850 55 L 860 115 Q 850 155 835 160 L 65 160 Q 50 155 40 115 Z" 
+        fill="none" stroke="#0f2847" stroke-width="2.5"/>
+  
+  <!-- Highlight edge -->
+  <path d="M 50 55 Q 65 40 80 45 L 820 45" 
+        fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Main stylized text: JESUS TRAVELS -->
+  <text x="450" y="115" font-family="Georgia, serif" font-size="72" font-weight="bold" 
+        text-anchor="middle" fill="#0f2847" letter-spacing="3"
+        style="font-style: italic; text-shadow: 2px 2px 2px rgba(255,255,255,0.5);">
+    JESUS TRAVELS
+  </text>
+  
+  <!-- Text outline/shadow effect -->
+  <text x="451" y="116" font-family="Georgia, serif" font-size="72" font-weight="bold" 
+        text-anchor="middle" fill="none" stroke="#0f2847" stroke-width="0.5" letter-spacing="3"
+        style="font-style: italic; opacity: 0.3;">
+    JESUS TRAVELS
+  </text>
+  
+  <!-- Subtitle: POOLCAR AND TOURIST TRAVEL SERVICES -->
+  <text x="450" y="145" font-family="Arial, sans-serif" font-size="11" font-weight="bold" 
+        text-anchor="middle" fill="#0f2847" letter-spacing="1.5">
+    POOLCAR AND TOURIST TRAVEL SERVICES
+  </text>
+</svg>
